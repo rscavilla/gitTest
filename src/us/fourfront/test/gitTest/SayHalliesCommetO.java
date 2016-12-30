@@ -7,12 +7,17 @@ public class SayHalliesCommetO {
 	}
 
 	public static void main(String[] args) {
-		String greeting = "Hallies Commet O!";
-		greeting += " Now let's add a change to see how Git works";
+		String[] greeting = new String[2];
+		greeting[0] = "Hallies Commet O!";
+		greeting[1] = " Now let's add a change to see how Git works";
 		sayIt(greeting);
 	}
 
-	private static void sayIt(String msg) {// testing SVN
-		System.out.println(msg);
+	private static void sayIt(String[] msg) {// testing SVN
+		System.out.println(mergeMsg(msg));
+	}
+	
+	private static String mergeMsg(String[] msg) {
+		return msg[0] + msg[1];
 	}
 }
