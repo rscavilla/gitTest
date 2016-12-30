@@ -7,7 +7,8 @@ public class SayHalliesCommetO {
 	}
 
 	public static void main(String[] args) {
-		String greeting = "Hallies Commet O";
+		String greeting = "Hallies Commet O!";
+		greeting += " Now let's add a change to see how Git works";
 		sayIt(greeting);
 	}
 
